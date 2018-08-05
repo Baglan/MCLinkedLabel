@@ -12,6 +12,8 @@
 		868B630A2115752400BCDFF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 868B63082115752400BCDFF9 /* Main.storyboard */; };
 		868B630C2115752500BCDFF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868B630B2115752500BCDFF9 /* Assets.xcassets */; };
 		868B630F2115752500BCDFF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 868B630D2115752500BCDFF9 /* LaunchScreen.storyboard */; };
+		868B63182115753D00BCDFF9 /* MCLinkedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868B63172115753D00BCDFF9 /* MCLinkedLabel.swift */; };
+		868B631A2115755800BCDFF9 /* MCLinkedTextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868B63192115755800BCDFF9 /* MCLinkedTextRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		868B630B2115752500BCDFF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		868B630E2115752500BCDFF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		868B63102115752500BCDFF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		868B63172115753D00BCDFF9 /* MCLinkedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLinkedLabel.swift; sourceTree = "<group>"; };
+		868B63192115755800BCDFF9 /* MCLinkedTextRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLinkedTextRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		868B62F82115752400BCDFF9 = {
 			isa = PBXGroup;
 			children = (
+				868B63162115752A00BCDFF9 /* Classes */,
 				868B63032115752400BCDFF9 /* MCLinkedLabel */,
 				868B63022115752400BCDFF9 /* Products */,
 			);
@@ -62,6 +67,15 @@
 				868B63102115752500BCDFF9 /* Info.plist */,
 			);
 			path = MCLinkedLabel;
+			sourceTree = "<group>";
+		};
+		868B63162115752A00BCDFF9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				868B63192115755800BCDFF9 /* MCLinkedTextRecognizer.swift */,
+				868B63172115753D00BCDFF9 /* MCLinkedLabel.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				868B63072115752400BCDFF9 /* ViewController.swift in Sources */,
+				868B631A2115755800BCDFF9 /* MCLinkedTextRecognizer.swift in Sources */,
 				868B63052115752400BCDFF9 /* AppDelegate.swift in Sources */,
+				868B63182115753D00BCDFF9 /* MCLinkedLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

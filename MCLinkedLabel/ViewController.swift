@@ -8,18 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MCLinkedLabelDelegate {
 
+    @IBOutlet weak var label: MCLinkedLabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // Process the label text as Markdown
+        if let text = label.text {
+            label.setMarkdownText(text)
+        }
+        
+        // Set the link visual style
+        label.linkUnderlineStyle = .styleNone
+        
+        // Assign self as deelgate
+        label.delegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // Process taps on linked text as a delegate
+    func didTap(on fragment: MCLinkedLabel.LinkedFragment) {
+        NSLog("[Tap]: \(fragment.url)")
     }
-
-
 }
 
